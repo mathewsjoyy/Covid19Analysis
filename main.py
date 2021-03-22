@@ -33,3 +33,7 @@ target_df["Total Deaths"] = target_df["Total Deaths"].str.replace("+", "")
 target_df["Total Cases"] = pd.to_numeric(target_df["Total Cases"])
 target_df["Total Recoveries"] = pd.to_numeric(target_df["Total Recoveries"])
 target_df["Total Deaths"] = pd.to_numeric(target_df["Total Deaths"])
+
+# Export the Data Set
+# target_df.to_csv(r"covid19_dataset.csv") # csv version
+target_df.to_excel(r"covid19_dataset.xlsx") # Excel version
